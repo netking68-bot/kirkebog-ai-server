@@ -1,8 +1,6 @@
 services:
   - type: web
     name: kirkebog-ai
-    env: python
+    env: docker
     plan: free
-    buildCommand: "apt-get update && apt-get install -y tesseract-ocr tesseract-ocr-dan && pip install -r requirements.txt"
-    startCommand: "python server.py"
     autoDeploy: true
